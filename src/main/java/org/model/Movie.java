@@ -1,4 +1,5 @@
 package org.model;
+
 import java.io.Serializable;
 
 public class Movie implements Serializable{
@@ -24,5 +25,10 @@ public class Movie implements Serializable{
 
     public void setDuration(int duration) {
         this.duration = duration;
+    }
+
+    @Override
+    public String toString() {
+        return "Película " + this.getTitle() + ", duración " + this.duration;
     }
 }

@@ -1,6 +1,8 @@
 package org.model;
 
-public class Theater {
+import java.io.Serializable;
+
+public class Theater implements Serializable {
     private String name;
     private String location;
 
@@ -25,5 +27,8 @@ public class Theater {
         this.location = location;
     }
 
-    //Para que yo pueda delimitar quien entra a los datos. Y depurar
+    @Override
+    public String toString() {
+        return "Teatro " + this.getName() + " en " + this.getLocation();
+    }
 }

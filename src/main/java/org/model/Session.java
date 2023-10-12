@@ -1,6 +1,8 @@
 package org.model;
 
-public class Session {
+import java.io.Serializable;
+
+public class Session implements Serializable {
 
     private org.model.Movie movie;
     private org.model.Theater theater;
